@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { ImBookmark, ImHistory, ImLocation } from "react-icons/im";
+
+//* https://react-icons.github.io/react-icons/icons/im/ */
 
 function AboutCard() {
   return (
@@ -8,33 +10,34 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            I am currently a data scientist working in the insurance industry.
             <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I studied finance in undergrad, but found my passion in statistics.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
           </p>
+          <h3 className="orange">Education:</h3>
           <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
+            <li className="about-education">
+              <ImBookmark /> M.S. in Statistics (2021)
             </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
+            <li className="about-education">
+              <ImBookmark /> B.A in Finance | 3 Minors (2020)
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <br />
+          <h3 className="orange">Experience:</h3>
+          <ul>
+            <li className="about-experience">
+              <ImLocation /> Senior Data Scientist | Progressive Insurance
+            </li>
+            <li className="about-experience">
+              <ImHistory /> Data Analyst | Progressive Insurance
+            </li>
+            <li className="about-experience">
+              <ImHistory /> Graduate Assistant | Cleveland State University
+            </li>
+          </ul>
         </blockquote>
       </Card.Body>
     </Card>
