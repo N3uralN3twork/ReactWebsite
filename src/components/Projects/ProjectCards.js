@@ -1,9 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link component
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 
 function ProjectCards(props) {
+  // Function to check if link is an external URL
+  const isExternalLink = (link) => {
+    return link.startsWith("http://") || link.startsWith("https://");
+  };
+
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -22,7 +28,15 @@ function ProjectCards(props) {
           ))}
         </Card.Body>
         <div style={{ marginTop: 'auto', textAlign: 'center' }}> {/* Centering the button */}
-          <Button variant="primary" href={props.link} target="_blank">Explore</Button>
+          {isExternalLink(props.link) ? ( // Check if link is external
+            <Button variant="primary" href={props.link} target="_blank">
+              Explore
+            </Button>
+          ) : ( // Render internal Link if link is not external
+            <Link to={props.link}>
+              <Button variant="primary">Explore</Button>
+            </Link>
+          )}
         </div>
       </div>
     </Card>

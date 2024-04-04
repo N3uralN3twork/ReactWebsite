@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -50,7 +51,7 @@ function Projects() {
               date="Nov 6th, 2022"
               description="This project is a demonstration of map-making with the Leaflet library in R."
               tags={["R", "STATISTICS", "LEAFLET"]}
-              link="https://n3uraln3twork.github.io/posts/japan-population/japanMaps.html"      
+              link="https://n3uraln3twork.github.io/posts/japan-population/japanMaps.html"
             />
           </Col>
 
@@ -61,7 +62,7 @@ function Projects() {
               date="Aug 12th, 2022"
               description="This project is a walkthrough of structural equation modeling in R."
               tags={["R", "STATISTICS", "SEM"]}
-              link="https://n3uraln3twork.github.io/posts/sem-cfa/SEM-Indices.html"
+              link={<Link to="/semproject">View Details</Link>}
             />
           </Col>
 
@@ -71,7 +72,7 @@ function Projects() {
               title="XGBoost"
               date="Dec 8th, 2021"
               description="A notebook on what XGBoost is and how it works. It includes a sample application to predicting forest cover types."
-              tags={["R", "ML", "XGBOOST"]}              
+              tags={["R", "ML", "XGBOOST"]}
               link="https://n3uraln3twork.github.io/posts/xgboost/xgboost.html"
             />
           </Col>
