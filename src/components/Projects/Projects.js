@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -54,7 +53,6 @@ function Projects() {
               link="https://n3uraln3twork.github.io/posts/japan-population/japanMaps.html"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={LavaanLogo}
@@ -62,7 +60,7 @@ function Projects() {
               date="Aug 12th, 2022"
               description="This project is a walkthrough of structural equation modeling in R."
               tags={["R", "STATISTICS", "SEM"]}
-              link={<Link to="/semproject">View Details</Link>}
+              link="semproject"
             />
           </Col>
 

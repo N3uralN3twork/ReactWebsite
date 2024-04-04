@@ -10,13 +10,13 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./output.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-//Importing Project Pages://
+
 import SEMProjectPage from "./components/Projects/SEM-CFA/SEM";
 
 function App() {
@@ -38,8 +38,8 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/semproject" element={<SEMProjectPage />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/semproject" element={<SEMProjectPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/" />} />
