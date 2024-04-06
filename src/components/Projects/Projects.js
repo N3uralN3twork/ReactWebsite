@@ -71,7 +71,7 @@ function Projects() {
               date="Dec 8th, 2021"
               description="A notebook on what XGBoost is and how it works. It includes a sample application to predicting forest cover types."
               tags={["R", "ML", "XGBOOST"]}
-              link="https://n3uraln3twork.github.io/posts/xgboost/xgboost.html"
+              link="xgboost"
             />
           </Col>
 

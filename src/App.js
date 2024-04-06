@@ -17,7 +17,9 @@ import "./output.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+//Project Pages:;
 import SEMProjectPage from "./components/Projects/SEM-CFA/SEM";
+import XGBoostPage from "./components/Projects/XGBoost/XGBoost";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -40,6 +42,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/semproject" element={<SEMProjectPage />} />
+          <Route path="/projects/xgboost" element={<XGBoostPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/" />} />
