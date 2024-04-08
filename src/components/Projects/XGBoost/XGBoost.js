@@ -1,28 +1,29 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import HighlightSyntax from '../SyntaxHighlighter';
-import XGBoost from './XGBoost.md';
+import { useState, useEffect } from 'react';
+import 'katex/dist/katex.min.css';
+import Markdown from '../RenderMD';
 
-function XGBoostPage(){
-  return (
-    <main className="h-full bg-white rounded-md border">
-      <header>
-        .........
-      </header>
-      <div
-        className=" leading-8 marker:text-black max-w-2xl mx-auto py-6 prose
-          prose-lg prose-p:block prose-li:py-[0.5] prose-li:my-0 prose-a:text-blue-600
-         hover:prose-a:text-blue-500 prose-code:text-sm prose-code:bg-gray-200 
-          prose-code:p-1 prose-code:rounded prose-img:mx-auto       "
-      >
-        <ReactMarkdown components={HighlightSyntax}>{XGBoost}</ReactMarkdown>
-      </div>
+function XGBoostPage() {
+	const file_name = './XGBoost.md';
+	const [post, setPost] = useState('');
 
-      <section className="border-t-2 px-8 py-4">
-        ........
-      </section>
-    </main>
-  );
-};
+	useEffect(() => {
+		import(`${file_name}`)
+			.then(res => {
+				fetch(res.default)
+					.then(res => res.text())
+					.then(res => setPost(res));
+			})
+			.catch(err => console.log(err));
+	});
+
+	return (
+		<div>
+			<Markdown>
+				{post}
+			</Markdown>
+		</div>
+	);
+}
 
 export default XGBoostPage;

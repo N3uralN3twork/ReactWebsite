@@ -8,6 +8,8 @@ Matthias Quinn, Matthew Brigham
 
 **Fall 2021**
 
+$y=mX + b$
+
 # Abstract
 
 This project will focus on the famous XGBoost system and its application
