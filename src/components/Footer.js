@@ -16,7 +16,7 @@ function Footer() {
           <h3>Designed and Developed by Matthias Quinn</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} MQuinn</h3>
+          <h3>Copyright © {year} Matt Quinn</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -24,7 +24,7 @@ function Footer() {
               <a
                 href="https://github.com/N3uralN3twork"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -34,7 +34,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/matthiasquinn/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
@@ -44,7 +44,7 @@ function Footer() {
               <a
                 href="mailto:miq_qedquinn@yahoo.com"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <MdOutlineMail />

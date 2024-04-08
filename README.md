@@ -9,15 +9,11 @@
 <br/>
 
 <h3 align="center">
-    ⭕
+    ❗
     <a href="https://github.com/N3uralN3twork/ReactWebsite/issues">Website Issues</a> &nbsp; &nbsp;
     ⭕
     <a href="https://github.com/N3uralN3twork/ReactWebsite/pulls">Pull Requests</a>
 </h3>
-
-## TL;DR
-
-Credit goes to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio) for his wonderful repository.
 
 ## Built With
 
@@ -28,3 +24,7 @@ This project was built using these technologies.
 <h3 align="center">
 ⭕ React.js ⭕ Node.js ⭕ Express.js ⭕ CSS3 ⭕ VSCode ⭕ Vercel
 </h3>
+
+## Credits
+
+Credit goes to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio) for his wonderful repository.

@@ -31,9 +31,17 @@ function ResumeNew() {
           </Button>
         </Row>
 
+        {/* https://stackoverflow.com/questions/76804151/how-to-get-rid-of-pdf-dead-white-space-in-react-for-react-pdf */}
+
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} />
+          </Document>
+        </Row>
+
+        <Row className="resume">
+          <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} />
           </Document>
         </Row>
 
